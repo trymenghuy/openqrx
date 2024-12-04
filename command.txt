@@ -1,0 +1,39 @@
+dart run build_runner --delete-conflicting-outputs
+dart run build_runner build --delete-conflicting-outputs
+flutter build appbundle
+flutter build apk --split-per-
+flutter pub upgrade --major-versions
+flutter pub outdated
+flutter gen-l10n
+isar:
+flutter pub run build_runner build
+//TODO table
+quick_actions 
+palette_generator 
+python svg_cmd.py
+firebase deploy --only firestore:rules
+firebase deploy --only firestore:indexes
+firebase deploy --only storage
+dart pad
+flutter pub run flutter_flavorizr
+flutter run --flavor dev -t lib/main_dev.dart
+flutter run --flavor prod -t lib/main_prod.dart
+flutter run --flavor stage -t lib/main_stage.dart
+
+
+NODE_ENV=dev firebase deploy --only functions
+NODE_ENV=prod firebase deploy --only functions
+dart pub global run flutterfire_cli:flutterfire configure
+flutterfire configure \
+  --project=khmer-agriculture-suite-dev \
+  --out=lib/firebase_options_dev.dart \
+  --ios-bundle-id=kh.gov.kas.kas_weather.data_collection.stg \
+  --android-app-id=kh.gov.kas.kas_weather.data_collection.stg
+
+  dart pub global run flutterfire_cli:flutterfire  config \
+  --project=khmer-agriculture-suite-dev \
+  --out=lib/firebase_options_staging.dart \
+  --ios-bundle-id=kh.gov.kas.kas_weather.data_collection.stg \
+  --ios-out=ios/flavors/staging/GoogleService-Info.plist \
+  --android-package-name=kh.gov.kas.kas_weather.data_collection.stg \
+  --android-out=android/app/src/staging/google-services.json
